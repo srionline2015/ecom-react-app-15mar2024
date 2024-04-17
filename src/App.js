@@ -1,6 +1,12 @@
 import logo from './logo.svg';
 import './App.css';
-import Header from './CommonComponents/Header';
+import Home from './Components/Home';
+
+import { BrowserRouter } from 'react-router-dom';
+
+//Routing
+import RoutingConfig from './Routing/RoutingConfig';
+import Menu from './Routing/Menu';
 
 function App() {
   return (
@@ -9,7 +15,12 @@ function App() {
         
       </header> */}
 
-      <Header></Header>
+     {/* <Home></Home> */}
+
+      <BrowserRouter>
+          <Menu></Menu>
+          <RoutingConfig></RoutingConfig>
+      </BrowserRouter>
 
     </div>
   );
